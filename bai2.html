@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<select name="" id="From">
+    <option value="0.305">Mét</option>
+    <option value="3.279">Feet</option>
+</select><input type="number" id="number">
+<select name="" id="To">
+    <option value="0.305">Mét</option>
+    <option value="3.279">Feet</option>
+</select>
+<button onclick="Change()">Đổi</button>
+<p id="display"></p>
+<script>
+  function Change() {
+    let a = parseInt(document.getElementById("number").value);
+    let b = parseFloat(document.getElementById('To').value);
+    let c = document.getElementById("From");
+    let e = c.options[c.selectedIndex].text;
+    let f = document.getElementById("To");
+    let g = f.options[f.selectedIndex].text;
+
+    if(e==g){
+        document.getElementById("display").innerHTML = "Bạn phải đổi đơn vị sau"
+    }else {
+        document.getElementById("display").innerHTML = a + " " + e + " bằng "+ a * b + g;
+    }
+  }
+</script>
+</body>
+</html>
