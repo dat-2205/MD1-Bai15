@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num1 = parseInt(prompt("Nhập num1:" ))
+  let num2 = parseInt(prompt("Nhập num2:" ))
+
+  function swap(a,b) {
+    let temp = a;
+    a = b;
+    b = temp;
+    return "num1 " + a + " và " + "num2 " + b;
+  }
+  swap(num1,num2)
+  alert(swap(num1,num2))
+
+</script>
+</body>
+</html>

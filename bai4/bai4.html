@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="kytu" oninput="check()">
+<p id="result"></p>
+<script>
+  function check() {
+    let a = document.getElementById("kytu").value;
+    let x = parseInt(a)-parseInt(a)
+    if (x==0){
+      document.getElementById("result").innerHTML = "True";
+    }else {
+      document.getElementById("result").innerHTML = "False";
+    }
+  }
+</script>
+</body>
+</html>
