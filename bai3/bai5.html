@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe' , 'Regulus']
+    let star2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo']
+
+    let num  = prompt("Nhập ngôi sao bạn muốn: ")
+    let check = star1.indexOf(num)
+
+    while(check<0) {
+      alert("Tên ngôi sao không đúng")
+      num = prompt("Nhập lại tên ")
+      check = star1.indexOf(num)
+    }
+
+
+    alert(star1[check] + " - " + star2[check])
+
+</script>
+</body>
+</html>

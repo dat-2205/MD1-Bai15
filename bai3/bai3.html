@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="so1">
+<input type="number" id="so2">
+<button onclick="sosanh()">So sánh</button>
+<script>
+  function sosanh() {
+    let x = parseInt(document.getElementById("so1").value);
+    let y = parseInt(document.getElementById("so2").value);
+
+    if(x>y){
+      alert("Số thứ nhất lớn hơn số thứ 2")
+    }else {
+      alert("số thứ nhất cộng số thứ 2 bằng:  " + (x+y))
+    }
+  }
+</script>
+</body>
+</html>
